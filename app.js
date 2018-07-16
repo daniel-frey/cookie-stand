@@ -3,92 +3,98 @@
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
+
 var pikeLocation = {
   displayName: '1st and Pike',
   minCustomerHour: 23,
   maxCustomerHour: 65,
   avgCookies: 6.3,
+  hours: [],
+  total: 0,
   getSaleData: function() {
-    var data = {hours: [], total:0};
     for (var i=0; i<15; i++) {
       var hourlyCustomers = Math.floor(getRandomArbitrary(this.minCustomerHour, this.maxCustomerHour));
       var hourlySales = Math.ceil(hourlyCustomers * this.avgCookies);
-      data.hours[i] = hourlySales;
-      data.total += hourlySales;
+      this.hours[i] = hourlySales;
+      this.total += hourlySales;
     }
-    return data;
   }
 };
-console.log('pike', pikeLocation.getSaleData());
+pikeLocation.getSaleData();
+console.log('pike', pikeLocation);
 
 var seaTacLocation = {
   displayName: 'SeaTac Airport',
   minCustomerHour: 3,
   maxCustomerHour: 24,
   avgCookies: 1.2,
+  hours: [],
+  total: 0,
   getSaleData: function() {
-    var data = {hours: [], total:0};
     for (var i=0; i<15; i++) {
       var hourlyCustomers = Math.floor(getRandomArbitrary(this.minCustomerHour, this.maxCustomerHour));
       var hourlySales = Math.ceil(hourlyCustomers * this.avgCookies);
-      data.hours[i] = hourlySales;
-      data.total += hourlySales;
+      this.hours[i] = hourlySales;
+      this.total += hourlySales;
     }
-    return data;
   }
 };
-console.log('seatac', seaTacLocation.getSaleData());
+seaTacLocation.getSaleData();
+console.log('SeaTac', seaTacLocation);
 
 var centerLocation = {
   displayName: 'Seattle Center',
   minCustomerHour: 11,
   maxCustomerHour: 38,
   avgCookies: 3.7,
+  hours: [],
+  total: 0,
   getSaleData: function() {
-    var data = {hours: [], total:0};
     for (var i=0; i<15; i++) {
       var hourlyCustomers = Math.floor(getRandomArbitrary(this.minCustomerHour, this.maxCustomerHour));
       var hourlySales = Math.ceil(hourlyCustomers * this.avgCookies);
-      data.hours[i] = hourlySales;
-      data.total += hourlySales;
+      this.hours[i] = hourlySales;
+      this.total += hourlySales;
     }
-    return data;
   }
 };
-console.log('center',centerLocation.getSaleData());
+centerLocation.getSaleData();
+console.log('Seattle Center', centerLocation);
 
 var capitolHillLocation = {
   displayName: 'Capitol Hill',
   minCustomerHour: 20,
   maxCustomerHour: 38,
   avgCookies: 2.3,
+  hours: [],
+  total: 0,
   getSaleData: function() {
-    var data = {hours: [], total:0};
     for (var i=0; i<15; i++) {
       var hourlyCustomers = Math.floor(getRandomArbitrary(this.minCustomerHour, this.maxCustomerHour));
       var hourlySales = Math.ceil(hourlyCustomers * this.avgCookies);
-      data.hours[i] = hourlySales;
-      data.total += hourlySales;
+      this.hours[i] = hourlySales;
+      this.total += hourlySales;
     }
-    return data;
   }
 };
-console.log('capitolhill', capitolHillLocation.getSaleData());
+capitolHillLocation.getSaleData();
+console.log('Capitol Hill', capitolHillLocation);
 
 var alkiLocation = {
   displayName: 'Alki',
   minCustomerHour: 2,
   maxCustomerHour: 16,
   avgCookies: 4.6,
+  hours: [],
+  total: 0,
   getSaleData: function() {
-    var data = {hours: [], total:0};
     for (var i=0; i<15; i++) {
       var hourlyCustomers = Math.floor(getRandomArbitrary(this.minCustomerHour, this.maxCustomerHour));
       var hourlySales = Math.ceil(hourlyCustomers * this.avgCookies);
-      data.hours[i] = hourlySales;
-      data.total += hourlySales;
+      this.hours[i] = hourlySales;
+      this.total += hourlySales;
     }
-    return data;
   }
 };
-console.log('alki', alkiLocation.getSaleData());
+alkiLocation.getSaleData();
+console.log('Alki', alkiLocation);
