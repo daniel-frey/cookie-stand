@@ -19,7 +19,7 @@ var pikeLocation = {
     return data;
   }
 };
-console.log(pikeLocation.getSaleData());
+console.log('pike', pikeLocation.getSaleData());
 
 var seaTacLocation = {
   displayName: 'SeaTac Airport',
@@ -37,7 +37,7 @@ var seaTacLocation = {
     return data;
   }
 };
-console.log(seaTacLocation.getSaleData());
+console.log('seatac', seaTacLocation.getSaleData());
 
 var centerLocation = {
   displayName: 'Seattle Center',
@@ -55,7 +55,7 @@ var centerLocation = {
     return data;
   }
 };
-console.log(centerLocation.getSaleData());
+console.log('center',centerLocation.getSaleData());
 
 var capitolHillLocation = {
   displayName: 'Capitol Hill',
@@ -73,7 +73,7 @@ var capitolHillLocation = {
     return data;
   }
 };
-console.log(capitolHillLocation.getSaleData());
+console.log('capitolhill', capitolHillLocation.getSaleData());
 
 var alkiLocation = {
   displayName: 'Alki',
@@ -91,4 +91,4 @@ var alkiLocation = {
     return data;
   }
 };
-console.log(alkiLocation.getSaleData());
+console.log('alki', alkiLocation.getSaleData());
