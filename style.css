@@ -32,10 +32,12 @@ html, body {
 	}
 	#fish {
 	width: 175px;
+	padding-top: 15px;
 	}
 	#text {
 	position: absolute;
 	top: -81px;
 	left: -15px;
 	width: 200px;
+	padding-top: 15px;
 	}
