@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Sales Dashboard - Pat's Salmon Cookie Shop</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header></header>
-        <main>
-				<div class ='col'>
-				<section class='col col-3 pad-20' id='pikehourly'>
-					<h2>Hourly Sales Figures for 1st and Pike</h2>
-				</section>
-				
-				<section class='col col-3 pad-20' id='seatachourly'>
-					<h2>Hourly Sales Figures for SeaTac Airport</h2>
-				</section>
-				
-				<section class='col col-3 pad-20' id='centerhourly'>
-					<h2>Hourly Sales Figures for Seattle Center</h2>
-				</section>
-				
-				<section class='col col-3 pad-20' id='caphillhourly'>
-					<h2>Hourly Sales Figures for Capitol Hill</h2>
-				</section>
-
-          <section class='col col-3 pad-20' id='alkihourly'>
-            <h2>Hourly Sales Figures for Alki</h2>
-					</section>
-				</div>
-        </main>
-        <footer></footer>
-        <script src="app.js"></script>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="reset.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+  <title>Pat's Sales</title>
+</head>
+<body>
+	<header></header>
+	<main>
+		<div id="container-sales">
+    <div id="logo">
+      <img src="salmon.png" alt="" id="fish">
+      <img src='logotext.svg' id="text">
+    </div>
+    <div id="sections col-3">
+      <section id='pikehourly'>
+        <h2>Hourly Sales Figures for 1st and Pike</h2>
+      </section>
+      <section id='seatachourly'>
+        <h2>Hourly Sales Figures for SeaTac Airport</h2>
+      </section>
+      <section id='centerhourly'>
+        <h2>Hourly Sales Figures for Seattle Center</h2>
+      </section>
+      <section id='caphillhourly'>
+        <h2>Hourly Sales Figures for Capitol Hill</h2>
+      </section>
+      <section id='alkihourly'>
+        <h2>Hourly Sales Figures for Alki</h2>
+      </section>
+    </div>
+  </div>
+	</main>
+	<footer></footer>
+	<script src="app.js"></script>
+</body>
 </html>
