@@ -19,7 +19,7 @@ var pikeLocation = {
       var hourlySales = Math.ceil(hourlyCustomers * this.avgCookies);
       this.hours[i] = hourlySales;
       this.total += hourlySales;
-      
+
       var liEl = document.createElement('li');
       liEl.textContent = this.hours[i];
       ulEl.appendChild(liEl);
