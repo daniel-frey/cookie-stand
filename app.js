@@ -9,7 +9,7 @@ var pikeLocation = {
   minCustomerHour: 23,
   maxCustomerHour: 65,
   avgCookies: 6.3,
-  hours: [],
+  hours: ['6am','7am','8am','9am','10am','11am','12pm','1pm','2pm'],
   total: 0,
   getSaleData: function() {
     var ulEl = document.createElement('ul');
@@ -21,11 +21,11 @@ var pikeLocation = {
       this.total += hourlySales;
 
       var liEl = document.createElement('li');
-      liEl.textContent = this.hours[i];
+      liEl.textContent = this.hours[i] + ' cookies';
       ulEl.appendChild(liEl);
     }
     var liElOne = document.createElement('li');
-    liElOne.textContent = this.total;
+    liElOne.textContent = 'Total: ' + this.total;
     ulEl.appendChild(liElOne);
     var pikehourlySection = document.getElementById('pikehourly');
     pikehourlySection.appendChild(ulEl);
