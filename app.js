@@ -66,3 +66,27 @@ function populateCookieTable() {
 }
 
 populateCookieTable();
+
+var pClickEl = document.getElementById('form-submit');
+
+function clicked() {
+  console.log('Clicked!');
+}
+
+pClickEl.addEventListener('click', clicked);
+
+
+var formEl = document.getElementById('main-form');
+formEl.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  console.log(allStores.length);
+
+  var name = event.target.name.value;
+  var minCust = event.target.minCust.value;
+  var maxCust = event.target.maxCust.value;
+  var avgSale = event.target.avgSale.value;
+
+  new Store(name, minCust, maxCust, avgSale);
+  console.log(allStores);
+});

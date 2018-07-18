@@ -256,6 +256,7 @@ html, body, main {
 		width: calc(100% - 196px);
 		height: 100%;
 		z-index: 99;
+		display: none;
 	}
 	#treads span {
 		display: block;
@@ -271,6 +272,17 @@ html, body, main {
 		position: relative;
 		top: 520px;
 		opacity: 0;
+	}
+	form {
+		display: table;
+		font-family: 'Oswald', sans-serif;
+		color: white;
+		margin: 20px;
+		padding: 20px;
+		background: rgba(0,0,0,.5);
+		position: relative;
+		top: 300px;
+		left: 120px;
 	}
 	@media (hover:hover) {
 		#menu-control:hover #vert2 {
