@@ -256,7 +256,7 @@ html, body, main {
 		width: calc(100% - 196px);
 		height: 100%;
 		z-index: 99;
-		display: none;
+		left: -100%;
 	}
 	#treads span {
 		display: block;

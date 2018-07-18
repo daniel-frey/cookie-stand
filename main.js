@@ -9,6 +9,7 @@ function initialSetup() {
 
   //Set Up Timelines
   drawerTl = new TimelineMax();
+  drawerTl.add(TweenMax.to('#treads', 0.0, {left:'196px'}), 0);
   drawerTl.add(TweenMax.to('#vert1', 0.1, {left:'6px'}), 0);
   drawerTl.add(TweenMax.to('#vert2', 0.1, {opacity:0}), 0);
   drawerTl.add(TweenMax.to('#vert3', 0.1, {left:'-6px'}), 0);
