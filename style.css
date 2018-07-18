@@ -63,7 +63,8 @@ html, body, main {
 		background: rgba(0,0,0,.5);
 		position: relative;
 		top: 300px;
-    left: 120px;
+		left: 120px;
+		z-index: 1;
 	}
 	td {
 		padding: 5px;
@@ -169,6 +170,7 @@ html, body, main {
 		box-sizing: border-box;
 		transition: all 0.3s ease-out;
 		transform-style: preserve-3d;
+		z-index: 99;
 	}
 	#menu-control {
 		position: absolute;
@@ -221,6 +223,7 @@ html, body, main {
 		top: 60px;
 		width: 50%;
 		overflow: hidden;
+		z-index: 100;
 		}
 	nav ul {
 		position: relative;
@@ -249,6 +252,7 @@ html, body, main {
 		left: 196px;
 		width: calc(100% - 196px);
 		height: 100%;
+		z-index: 99;
 	}
 	#treads span {
 		display: block;
