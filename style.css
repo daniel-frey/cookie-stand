@@ -189,7 +189,6 @@ html, body, main {
 	#vert1, #vert2, #vert3 {
 		position: relative;
 		float: left;
-		display: inline-block;
 		top: 0px;
 		width: 1px;
 		height: 40px;
@@ -242,7 +241,7 @@ html, body, main {
 		font-family: 'Oswald', sans-serif;
 		font-weight: 700;
 		font-size: 84px;
-		color: #b7b8b7;
+		color: rgb(253,253,254);
 		text-transform: uppercase;
 		transition: color 0.2s ease-out;
 	}
