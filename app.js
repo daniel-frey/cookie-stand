@@ -67,13 +67,13 @@ function populateCookieTable() {
 
 populateCookieTable();
 
-var pClickEl = document.getElementById('form-submit');
+var fSubmit = document.getElementById('form-submit');
 
 function clicked() {
   console.log('Clicked!');
 }
 
-pClickEl.addEventListener('click', clicked);
+fSubmit.addEventListener('click', clicked);
 
 
 var formEl = document.getElementById('main-form');
