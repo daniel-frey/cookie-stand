@@ -54,6 +54,10 @@ html, body, main {
 		padding-bottom: 5px;
 		list-style: none;
 	}
+	a img {
+		position: relative;
+		display: inline-block;
+	}
 	#myTable {
 		display: table;
 		font-family: 'Oswald', sans-serif;
