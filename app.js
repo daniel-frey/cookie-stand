@@ -70,6 +70,7 @@ populateCookieTable();
 var fSubmit = document.getElementById('form-submit');
 
 function clicked() {
+  
 }
 
 fSubmit.addEventListener('click', clicked);
@@ -81,9 +82,11 @@ formEl.addEventListener('submit', function(event) {
   console.log(allStores.length);
 
   var name = event.target.name.value;
-  var min = event.target.minCust.value;
-  var max = event.target.maxCust.value;
+  var minCust = event.target.minCust.value;
+  var maxCust = event.target.maxCust.value;
   var avgSale = event.target.avgSale.value;
 
-  new Store(name, min, max, avgSale);
+  var dynamicStore = new Store(name, minCust, maxCust, avgSale);
+  dynamicStore.bake();
+  console.log(allStores);
 });
