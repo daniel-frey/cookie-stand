@@ -7,6 +7,7 @@
   <link href="reset.css" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,700" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.0/TweenMax.min.js"></script>
   <title>Pat's Sales</title>
 </head>
 <body>
@@ -17,12 +18,38 @@
       <img src="salmon.png" alt="" id="fish">
       <img src='logotext.svg' id="text">
     </div>
+    <div id="treads">
+			<span class="tread">
+			</span>
+			<span class="tread">
+			</span>
+			<span class="tread"></span>
+			<span class="tread"></span>
+		</div>
+		<section id="drawer">
+			<a href ='salmon.png'id="logo"></a>
+			<a href="javascript:void(0);" id="menu-control">
+				<div id="menu">
+					<span id="vert1"></span>
+					<span id="vert2"></span>
+					<span id="vert3"></span>
+					<div id="close">Close</div>
+				</div>
+			</a>
+		</section>
+		<nav>
+			<ul>
+				<li class="nav-link"><a href="sales.html">Sales Figures</a></li>
+				<li class="nav-link"><a href="about.html">About</a></li>
+			</ul>
+		</nav>
     <div>
       <table id='myTable'></table>
     </div>
   </div>
 	</main>
 	<footer></footer>
-	<script src="app.js"></script>
+  <script src="app.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
