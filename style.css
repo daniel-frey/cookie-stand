@@ -4,7 +4,7 @@ html, body, main {
 	margin: 0;
 	padding: 0;
 	}
-	#container {
+	.container {
 	position: relative;
 	width: 100%;
 	height: 100%;
@@ -12,7 +12,7 @@ html, body, main {
 	background-size: cover;
 	background-position: center;
 	}
-	#container-sales {
+	.container-sales {
 		position: relative;
 		width: 100%;
 		height:100%;
@@ -20,22 +20,22 @@ html, body, main {
 		background-size: cover;
 		background-position: center;
 		}
-	#logo {
+	.logo {
 	position: relative;
 	top: 100px;
 	left: 120px;
 	display: inline-block;
 	max-width: 50%;
 	}
-	#logo h1 {
+	.logo h1 {
 	font-size: 1em;
 	font-family: 'Oswald', sans-serif;
 	}
-	#fish {
+	.fish {
 	width: 175px;
 	padding-top: 15px;
 	}
-	#text {
+	.text {
 	position: absolute;
 	top: -81px;
 	left: -15px;
@@ -162,6 +162,8 @@ html, body, main {
 	.spacer {
 		height: 60px;
 	}
+
+	/* All of the CSS below belongs to the GSAP navigation  */
 	#drawer {
 		position: fixed;
 		top: 0px;
