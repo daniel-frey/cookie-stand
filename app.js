@@ -35,7 +35,7 @@ Store.prototype.bake = function() {
     var newTd = document.createElement('td');
     newTd.textContent = this.hours[i];
     tbTr.appendChild(newTd);
-	  //Adds to the hourly total for each store
+    //Adds to the hourly total for each store
     hourlyTotals[i] += hourlySales;
   }
   //Adds to the grand total
@@ -78,8 +78,9 @@ function buildTable() {
   myTable.appendChild(tbTh);
   tbTr.appendChild(tbTd);
   var tbBody = document.createElement('tbody');
-  	tbBody.id = 'table-body';
-  	myTable.appendChild(tbBody);
+  tbBody.id = 'table-body';
+  myTable.appendChild(tbBody);
+  
   var tbFoot = document.createElement('tfoot');
   tbFoot.id = 'foot-total';
   myTable.appendChild(tbFoot);
