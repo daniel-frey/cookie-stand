@@ -211,7 +211,7 @@ nav a.active {
 .cta {
 	text-align: center;	
 }
-.home-beer-list-head {
+.home-page-list-head {
 	text-align: center;
 	background: #f3eded !important;
 	font-size: 1.2em;
@@ -356,18 +356,6 @@ strong {
 	.cta a:hover {
 		background: #94201a;
 	}
-	.beer-item:hover {
-		background: #c62f27;
-	}
-	.beer-item:hover .abv {
-		color: #f3eded;
-	}
-	#close-beer:hover {
-		border: 1px solid #c62f27;	
-	}
-	#close-beer:hover::before, #close-beer:hover::after {
-		background: #c62f27;
-	}
 	#menu:hover {
 		border: 1px solid #f3eded;
 	}
@@ -443,16 +431,6 @@ strong {
 	#ribbon-box {
 		top: -20px !important;
 	}
-	.beer-list li {
-		padding: 5px 20px;
-	}
-	.beer-details {
-		display: inline-block;
-		max-width: 80%;
-	}
-	#holder .beer-details {
-		max-width: 100% !important;
-	}
 	footer .col-2-3, footer .col-3 {
 		width: 50%;
 	}
@@ -475,18 +453,6 @@ strong {
 	}
 	#mc-embedded-subscribe {
 		margin-top: 15px !important;
-	}
-	.on-deck-beers {
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-	}
-	.beer {
-		display: block;
-		margin: .2em 0;
-	}
-	#taproom-stripe {
-		background-attachment: inherit !important;	
 	}
 	.max-60 {
 		width: 60% !important;
@@ -523,9 +489,6 @@ strong {
 	.cta {
 		margin: 15px auto;
 	}
-	.beer-list {
-		font-size: 1.3em !important;
-	}
 	footer {
 		background: none;
 	}
@@ -538,17 +501,5 @@ strong {
 	}
 	.date-divide {
 		display: none;
-	}
-	.home-beer-list-head {
-		font-size: .75em !important;
-	}
-}
-/* Extra Small Screen Dimensions */
-@media (max-width: 374px) {
-	.beer-head h1 span {
-		display: block;
-	}
-	.beer-head .abv {
-		margin-top: 15px;
 	}
 }
